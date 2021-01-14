@@ -1,0 +1,19 @@
+#!/bin/sh
+
+ alias \
+         cp="cp -r -iv" \
+	 mv="mv -iv" \
+	 rm="rm -r -iv" \
+	 mkd="mkdir -pv" \
+	 ls="ls -l --color" \
+	 la="ls -la --color" \
+	 lh="ls -d .* --color" \
+ 	 ccat="highlight --out-format=ansi" \
+	 f="$FILE" \
+	 e="$EDITOR" \
+	 v="$EDITOR" \
+	 ka="killall" \
+	 g="git" \
+	 po="doas poweroff" \
+	 es="emerge -s" \
+	 ed="doas emerge" \
