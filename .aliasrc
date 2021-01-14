@@ -16,6 +16,9 @@ command -v nvim >/dev/null && alias vim="nvim" vimdiff="nvim -d"
 	 v="$EDITOR" \
 	 ka="killall" \
 	 g="git" \
+	 gc="git commit -m" \
+ 	 gcnm="git commit -a --allow-empty-message -m ''" \
+	 gp="git push"
 	 po="doas poweroff" \
 	 es="emerge -s" \
 	 ed="doas emerge" \
