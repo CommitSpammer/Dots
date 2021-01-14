@@ -1,5 +1,7 @@
 #!/bin/sh
 
+command -v nvim >/dev/null && alias vim="nvim" vimdiff="nvim -d"
+
  alias \
          cp="cp -r -iv" \
 	 mv="mv -iv" \
