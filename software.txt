@@ -106,6 +106,8 @@ www-client/firefox
 app-text/zathura
 media-sound/alsa-utils
 media-sound/pulseaudio
+media-sound/mpd
+media-sound/ncmpcpp
 net-misc/youtube-dl
 app-misc/neofetch
 sys-process/htop
