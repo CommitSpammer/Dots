@@ -104,10 +104,12 @@ media-font/font-arabic-misc
 # Misc
 www-client/firefox
 app-text/zathura
+sys-apps/groff
 media-sound/alsa-utils
 media-sound/pulseaudio
 media-sound/mpd
 media-sound/ncmpcpp
+net-news/newsboat
 net-misc/youtube-dl
 app-misc/neofetch
 sys-process/htop
@@ -116,4 +118,6 @@ media-gfx/sxiv
 media-gfx/scrot
 media-gfx/gimp
 media-video/mpv
+media-video/ffmpeg
 app-office/calcurse
+app-office/sc
