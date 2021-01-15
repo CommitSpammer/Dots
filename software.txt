@@ -60,14 +60,13 @@ net-proxy/mitmproxy
 net-vpn/httptunnel
 net-dns/dnshijacker
 net-dns/dnswalk
-#net-dns/dnscap Requires OpenSSL
+net-dns/dnscap
+net-dns/ldns-utils
 net-analyzer/fragroute
 net-analyzer/firewalk
-net-analyzer/dnsenum
 www-client/httrack
 app-crypt/hashcat
 app-crypt/mhash
-#app-crypt/openvpn-blacklist
 net-wireless/aircrack-ng
 net-misc/socat
 media-libs/exiftool
@@ -97,9 +96,9 @@ media-fonts/sil-galatia
 media-fonts/sil-gentium
 media-fonts/sophia-nubian
 media-fonts/unifont
-media-fonts/arphicfont
+media-fonts/arphicfonts
 media-fonts/unfonts
-media-font/font-arabic-misc
+media-fonts/font-arabic-misc
 
 # Misc
 www-client/firefox
