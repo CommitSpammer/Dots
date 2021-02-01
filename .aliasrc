@@ -7,9 +7,12 @@ command -v nvim >/dev/null && alias vim="nvim" vimdiff="nvim -d"
 	 mv="mv -iv" \
 	 rm="rm -r -iv" \
 	 mkd="mkdir -pv" \
-	 ls="ls -l --color" \
-	 la="ls -la --color" \
+	 ls="ls --color" \
+	 lls="ls -l --color" \
+	 la="ls -a --color" \
+	 lla="ls -la --color" \
 	 lh="ls -d .* --color" \
+	 llh="ls -ld .* --color" \
 	 grep="grep --color=auto" \
 	 diff="diff --color=auto" \
  	 ccat="highlight --out-format=ansi" \
