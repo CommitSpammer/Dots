@@ -38,4 +38,6 @@ command -v nvim >/dev/null && alias vim="nvim" vimdiff="nvim -d"
 	 po="doas poweroff" \
 	 es="emerge -s" \
 	 ed="doas emerge" \
+	 magit="nvim -c MagitOnly" \
+	 mpv="mpv --input-ipc-server=/tmp/mpvsoc$(date +%s)" \
 	 passwdgen="sh /$HOME/.config/scripts/passwdgen.sh"
