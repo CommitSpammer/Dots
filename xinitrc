@@ -6,7 +6,7 @@ compton &
 #picom &
 
 # set pape
-~/.config/.fehbg &
+~/.config/fehbg &
 
 # disable monitor sleep/timeout
 xset -dpms
@@ -15,5 +15,10 @@ xset s off
 # hide cursor after 3 seconds of inactivity
 unclutter -idle 3 &
 
+# Loop
+while true; do
+	dwm >/dev/null 2>&1
+done
+
 # start dwm and save a logfile
-exec dwm > ~/.config/suckless/.dwm.log
+exec dwm > ~/.config/suckless/dwm/.dwm.log
