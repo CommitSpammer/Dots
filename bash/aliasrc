@@ -22,7 +22,7 @@ command -v nvim >/dev/null && alias vim="nvim" vimdiff="nvim -d"
 	 v="$EDITOR" \
 	 ytdl="youtube-dl --add-metadata -i" \
 	 yta="yt -x -f bestaudio/best" \
-	 YT="youtube-viewer" \
+	 ytv="sh ~/.config/scripts/youtube-viewer.sh" \
 	 ffmpeg="ffmpeg -hide_banner" \
 	 mpv="mpv --input-ipc-server=/tmp/mpvsoc$(date +%s)" \
 	 ka="killall" \
@@ -32,7 +32,7 @@ command -v nvim >/dev/null && alias vim="nvim" vimdiff="nvim -d"
 	 gr="git restore --staged" \
 	 gcm="git commit -m" \
  	 gcnm="git commit -a --allow-empty-message -m ''" \
-     gs="git status" \
+   	 gs="git status" \
 	 gp="git push" \
 	 sudo="doas" \
 	 magit="nvim -c MagitOnly" \
