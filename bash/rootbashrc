@@ -1,12 +1,12 @@
 #!/bin/bash
 
 # infinite history
-HISTSIZE= HISTFILESIZE= 
+HISTSIZE= HISTFILESIZE=
 
 # disable ctrl-s and ctrl-q
 stty -ixon
 
-# cd into any dir by typing just the dir name 
+# cd into any dir by typing just the dir name
 shopt -s autocd
 
 # ccache

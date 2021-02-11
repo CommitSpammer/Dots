@@ -3,16 +3,16 @@
 command -v nvim >/dev/null && alias vim="nvim" vimdiff="nvim -d"
 
  alias \
-         cp="cp -r -iv" \
+     cp="cp -r -iv" \
 	 mv="mv -iv" \
 	 rm="rm -r -iv" \
 	 mkd="mkdir -pv" \
 	 ls="ls --color" \
-	 lls="ls -l --color" \
-	 la="ls -a --color" \
-	 lla="ls -la --color" \
-	 lh="ls -d .* --color" \
-	 llh="ls -ld .* --color" \
+	 lls="lsd -l --color --icon never" \
+	 la="lsd -a --color --icon never" \
+	 lla="lsd -la --color --icon never" \
+	 lh="lsd -d .* --color --icon never" \
+	 llh="lsd -ld .* --color --icon never" \
 	 grep="grep --color=auto" \
 	 diff="diff --color=auto" \
  	 ccat="highlight --out-format=ansi" \
@@ -20,7 +20,7 @@ command -v nvim >/dev/null && alias vim="nvim" vimdiff="nvim -d"
 	 f="$FILE" \
 	 e="$EDITOR" \
 	 v="$EDITOR" \
-	 yt="youtube-dl --add-metadata -i" \
+	 ytdl="youtube-dl --add-metadata -i" \
 	 yta="yt -x -f bestaudio/best" \
 	 YT="youtube-viewer" \
 	 ffmpeg="ffmpeg -hide_banner" \
@@ -32,7 +32,7 @@ command -v nvim >/dev/null && alias vim="nvim" vimdiff="nvim -d"
 	 gr="git restore --staged" \
 	 gcm="git commit -m" \
  	 gcnm="git commit -a --allow-empty-message -m ''" \
-	 gs="git status" \
+     gs="git status" \
 	 gp="git push" \
 	 sudo="doas" \
 	 magit="nvim -c MagitOnly" \

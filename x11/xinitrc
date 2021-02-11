@@ -6,14 +6,21 @@ compton &
 #picom &
 
 # set pape
-~/.config/fehbg &
+~/.config/scripts/fehbg.sh &
 
 # disable monitor sleep/timeout
 xset -dpms
 xset s off
 
+# fonts
+xset +fp /usr/share/fonts/
+xset fp rehash
+
 # hide cursor after 3 seconds of inactivity
 unclutter -idle 3 &
+
+# dwmbar
+sh ~/.config/scripts/dwmbar.sh &
 
 # loop
 while true; do
