@@ -14,10 +14,7 @@ export PATH="/usr/lib/ccache/bin${PATH:+:}$PATH"
 export CCACHE_DIR="/var/cache/ccache"
 
 # aliases
-[ -f "$HOME/.config/aliasrc" ] && source "$HOME/.config/aliasrc"
-
-# bash completion
-[ -r /usr/share/bash-completion/bash_completion   ] && . /usr/share/bash-completion/bash_completion
+[ -f "$HOME/.config/bash/aliasrc" ] && source "$HOME/.config/bash/aliasrc"
 
 # editor
 set -o vi
