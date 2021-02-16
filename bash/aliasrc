@@ -1,5 +1,6 @@
 #!/bin/sh
 
+# use nvim when possible
 command -v nvim >/dev/null && alias vim="nvim" vimdiff="nvim -d"
 
  alias \
@@ -34,7 +35,8 @@ command -v nvim >/dev/null && alias vim="nvim" vimdiff="nvim -d"
  	 gcnm="git commit -a --allow-empty-message -m ''" \
    	 gs="git status" \
 	 gp="git push" \
-	 sudo="doas" \
+     sudo="doas" \
 	 magit="nvim -c MagitOnly" \
 	 mpv="mpv --input-ipc-server=/tmp/mpvsoc$(date +%s)" \
-	 passwdgen="sh /$HOME/.config/scripts/passwdgen.sh"
+	 passwdgen="sh /$HOME/.config/scripts/passwdgen.sh" \
+     size="du -h --max-depth=1"
