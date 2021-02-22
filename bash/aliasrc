@@ -1,8 +1,5 @@
 #!/bin/sh
 
-# use nvim when possible
-command -v nvim >/dev/null && alias vim="nvim" vimdiff="nvim -d"
-
  alias \
      cp="cp -r -iv" \
 	 mv="mv -iv" \
@@ -18,9 +15,8 @@ command -v nvim >/dev/null && alias vim="nvim" vimdiff="nvim -d"
 	 diff="diff --color=auto" \
  	 ccat="highlight --out-format=ansi" \
 	 magit="nvim -c MagitOnly" \
-	 f="$FILE" \
-	 e="$EDITOR" \
 	 v="$EDITOR" \
+     vim="$EDITOR" \
 	 ytdl="youtube-dl --add-metadata -i" \
 	 yta="yt -x -f bestaudio/best" \
 	 ytv="sh ~/.config/scripts/youtube-viewer.sh" \

@@ -1,7 +1,7 @@
 let mapleader =","
 
-set bg=light
-"set bg=dark
+"set bg=light
+set bg=dark
 "set t_Co=16
 set go=a
 set mouse=a
@@ -22,8 +22,10 @@ set fileformat=unix
 	syntax on
 	set encoding=utf-8
 	set number relativenumber
+
 " Enable autocompletion:
 	set wildmode=longest,list,full
+
 " Disables automatic commenting on newline:
 	autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
@@ -47,8 +49,10 @@ set fileformat=unix
 
 "Newtab with ctrl+t
 	nnoremap <silent> <C-t> :tabnew<CR>
+
 "Paste from system clipboard with ctrl+i instead of shift insert
 	map <S-Insert> <C-i>
+
 " Compile document, be it groff/LaTeX/markdown/etc.
 	map <leader>c :w! \| !compiler <c-r>%<CR>
 
@@ -69,11 +73,10 @@ set fileformat=unix
 	vnoremap <C-c> "+y
 	map <C-p> "+P
 
-" Automatically deletes all trailing whitespace on save.
+" Automatically deletes all trailing whitespace and newlines at end of file on save.
 	autocmd BufWritePre * %s/\s\+$//e
-
-" When shortcut files are updated, renew bash and vifm configs with new material:
-	autocmd BufWritePost ~/.config/bmdirs,~/.config/bmfiles !shortcuts
+    autocmd BufWritePre * %s/\n\+\%$//e
+    autocmd BufWritePre *.[ch] %s/\%$/\r/e
 
 " Update binds when sxhkdrc is updated.
 	autocmd BufWritePost *sxhkdrc !pkill -USR1 sxhkd

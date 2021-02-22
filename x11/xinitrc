@@ -2,8 +2,7 @@
 xrandr --output DisplayPort-1 --auto --left-of DisplayPort-0 --output HDMI-A-0 --auto --right-of DisplayPort-0
 
 # enable compositor
-compton &
-#picom &
+picom &
 
 # set pape
 ~/.fehbg &

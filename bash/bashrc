@@ -1,25 +1,24 @@
 #!/bin/bash
 
 # infinite history
-HISTSIZE= HISTFILESIZE= 
+HISTSIZE= HISTFILESIZE=
 
 # disable ctrl-s and ctrl-q
 stty -ixon
 
-# cd into any dir by typing just the dir name 
+# cd into any dir by typing just the dir name
 shopt -s autocd
 
 # ccache
 export PATH="/usr/lib/ccache/bin${PATH:+:}$PATH"
 export CCACHE_DIR="/var/cache/ccache"
 
+# editor
+export EDITOR="nvim"
+export VISUAL="nvim"
+
 # aliases
 [ -f "$HOME/.config/bash/aliasrc" ] && source "$HOME/.config/bash/aliasrc"
-
-# editor
-set -o vi
-export EDITOR='vi'
-export VISUAL='vi'
 
 # prompt
 export PS1="\[$(tput bold)\]\[$(tput setaf 4)\]\h\[$(tput setaf 6)\]:\[$(tput setaf 1)\][\[$(tput setaf 3)\]\u\[$(tput setaf 1)\]]\[$(tput setaf 6)\]: \[\e[32m\]\W\[\e[m\] \[$(tput setaf 5)\]\\$ \[$(tput sgr0)\]"
